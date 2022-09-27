@@ -21,7 +21,7 @@ export default ({ candles, domain }) => {
     >
       {candles.map((candle, index) => (
         <Candle
-          key={candle.date}
+          key={index}
           {...{ candle, index, width, scaleY, scaleBody }}
         />
       ))}
